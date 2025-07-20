@@ -1,42 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Typewriter</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happiness</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #fceabb, #f8b500);
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 50px;
+      color: #333;
+    }
+    h1 {
+      font-size: 3em;
+      color: #fff;
+      text-shadow: 2px 2px 4px #000;
+    }
+    p {
+      font-size: 1.5em;
+      margin-top: 20px;
+    }
+    .quote {
+      margin-top: 40px;
+      font-style: italic;
+      color: #444;
+    }
+    .smile {
+      font-size: 5em;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-
-  <h2 id="type"></h2>
-  <p id="paragraph"></p>
-
-  <script>
-    // For heading
-    let headingText = "Smaran's Website";
-    let i = 0;
-
-    function typewriterHeading() {
-      if (i < headingText.length) {
-        document.getElementById("type").innerHTML += headingText.charAt(i);
-        i++;
-        setTimeout(typewriterHeading, 100);
-      }
-    }
-
-    // For paragraph
-    let paraText = "Welcome to Smaran website.i am smaran ,this is my website. for more details email to banothusmaran@gmail.com.";
-    let j = 0;
-
-    function typewriterParagraph() {
-      if (j < paraText.length) {
-        document.getElementById("paragraph").innerHTML += paraText.charAt(j);
-        j++;
-        setTimeout(typewriterParagraph, 100);
-      }
-    }
-
-    // Start both typewriters
-    typewriterHeading();      // Start heading first
-    setTimeout(typewriterParagraph, headingText.length * 100 + 500); // Start paragraph after heading finishes
-  </script>
-
+  <h1>Choose Happiness 😊</h1>
+  <p>You don't have to search for happiness — create it.</p>
+  <div class="smile">🌞💛🌈</div>
+  <p class="quote">"Happiness is not something ready made. It comes from your own actions." – Dalai Lama</p>
 </body>
 </html>
